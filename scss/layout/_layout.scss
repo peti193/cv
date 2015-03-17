@@ -1,0 +1,14 @@
+/* ==|====================
+		Common layout
+   ======================= */
+
+
+@media all and (min-width: $width-small) {
+	.aside {
+		@include column(4/12);
+	}
+
+	.main-content {
+		@include column(8/12);
+	}
+}

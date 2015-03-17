@@ -1,0 +1,75 @@
+/* ==|================
+   Module/Content
+   =================== */
+
+.work-education {
+	.work-title,
+	.pos-title {
+		text-transform: uppercase;
+	}
+
+	.where,
+	.date {
+		color: lighten($sidebar-black, 60%);
+	}
+
+	.work-title {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: relative;
+			text-align: center;
+			display: block;
+			width: 40px;
+			height: 40px;
+			@include border-radius(50%);
+			background-color: darken($sidebar-blue , 10%);
+			color: $white;
+			font-size: .6em;
+			padding-top: 6px;
+			margin: {
+				left: 0;
+				right: 25px;
+				top: 4px;
+			}
+		}
+
+		&.css3 {
+			&:before {
+				@include icon($fa-var-css3);
+			}
+		}
+
+		&.university {
+			&:before {
+				@include icon($fa-var-building);
+			}
+		}
+
+		font: {
+			size: 2em;
+			family: $roboto-slab;
+			weight: bold;
+		}
+	}
+
+	.pos-title {
+		font: {
+			size: 1.5em;
+			family: $roboto-slab;
+			weight: normal;
+		}
+	}
+}
+
+@media all and (min-width: $width-small) {
+	.work-education {
+		.work-title {
+			&:before {
+				position: absolute;
+				margin-left: -50px;
+			}
+		}
+	}
+}

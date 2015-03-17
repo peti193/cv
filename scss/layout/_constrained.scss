@@ -1,0 +1,21 @@
+/* ==|====================
+   Layout/Constrained
+   ======================= */
+
+.l-constrained {
+	@include clearfix();
+	max-width: $wrapper-width;
+	margin: 0 auto;
+}
+
+.sidebar-inner,
+.work-education {
+	padding: 15px;
+}
+
+@media all and (min-width: $width-small) {
+	.sidebar-inner,
+	.work-education {
+		padding: 25px;
+	}
+}
