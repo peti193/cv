@@ -67,8 +67,8 @@
 	.work-education {
 		.work-title {
 			&:before {
-				position: absolute;
-				margin-left: -50px;
+				float: left;
+				margin-right: 15px;
 			}
 		}
 	}
